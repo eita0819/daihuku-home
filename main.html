@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介サイト</title>
+    <style>
+        body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header p {
+    margin: 0;
+    color: #888;
+    font-size: 1.1em;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 40px;
+    font-size: 1.8em;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.content p {
+    margin: 20px 0;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .container {
+    background-color: #444;
+}
+
+body.dark-mode .header, body.dark-mode .content h2 {
+    border-color: #555;
+}
+    </style>
+    <script>
+        document.getElementById('toggleDarkMode').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+});
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>大福</h1>
+            <p>学生?</p>
+            <button id="toggleDarkMode">ダークモード切り替え</button>
+        </div>
+        <div class="content">
+            <h2>自己紹介</h2>
+            <p>自鯖なう⬇︎
+                ブーストよろhttps://discord.gg/wB3bqGWA
+                nitro切れたので誰かください。</p>
+            <h2>スキル</h2>
+            <p>学生プログラマーエンジニアGOOGLE スタッフ Python最強</p>
+        </div>
+    </div>
